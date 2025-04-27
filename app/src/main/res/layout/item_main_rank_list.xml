@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/item_main_rank_no_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="#333333" />
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_main_rank_head_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/item_main_rank_no_tv"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_avatar_placeholder"
+        app:riv_oval="true" />
+    <LinearLayout
+        android:id="@+id/item_main_rank_gift_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/item_main_rank_gift_iv"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/ic_main_rank_list_gift" />
+        <TextView
+            android:id="@+id/item_main_rank_gift_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:minEms="2"
+            android:textSize="12dp"
+            android:textColor="@color/textColor2"
+            android:text="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/item_main_rank_level_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/item_main_rank_gift_lay"
+        android:layout_toRightOf="@id/item_main_rank_head_iv"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_main_rank_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/textColor0" />
+        <ImageView
+            android:id="@+id/item_main_rank_level_iv"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/item_main_rank_head_iv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_normal_dv"/>
+</RelativeLayout>

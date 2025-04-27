@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EE000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="@dimen/margin_padding_20"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_game_lottery_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/margin_padding_40"
+                android:layout_height="@dimen/margin_padding_40"
+                android:contentDescription="@null"
+                android:background="@mipmap/icon_lottery_record" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_15"
+                android:text="开奖记录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_game_tz_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/margin_padding_30"
+                android:layout_height="@dimen/margin_padding_40"
+                android:background="@mipmap/icon_tz_record"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_15"
+                android:text="投注记录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_live_game_record"
+        android:layout_width="@dimen/margin_padding_25"
+        android:layout_height="@dimen/margin_padding_25"
+        android:layout_marginTop="@dimen/margin_padding_20"
+        android:layout_marginBottom="@dimen/margin_padding_10"
+        android:padding="@dimen/margin_padding_10"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/icon_video_close"
+        android:contentDescription="@null"/>
+</LinearLayout>

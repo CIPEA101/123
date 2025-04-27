@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_padding_80"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white"
+    android:paddingTop="@dimen/margin_padding_5"
+    android:paddingBottom="@dimen/margin_padding_5">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/margin_padding_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/history_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_12"/>
+
+            <TextView
+                android:id="@+id/history_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_10"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/margin_padding_1"
+            android:layout_height="@dimen/margin_padding_45"
+            android:layout_marginStart="@dimen/margin_padding_10"
+            android:layout_marginEnd="@dimen/margin_padding_10"
+            android:background="@color/gray2" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/margin_padding_60"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投注金额"
+                android:textSize="@dimen/text_12"/>
+
+            <TextView
+                android:id="@+id/history_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_10"
+                android:textColor="@color/rgbDE5245"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/margin_padding_1"
+            android:layout_height="@dimen/margin_padding_45"
+            android:layout_marginStart="@dimen/margin_padding_10"
+            android:layout_marginEnd="@dimen/margin_padding_10"
+            android:background="@color/gray2" />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_change"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@null" />
+        <!-- 倒计时start-->
+        <LinearLayout
+            android:id="@+id/game_award_his_time_lay"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_count_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/textColor99"
+                android:text="封盘："/>
+            <cn.iwgang.countdownview.CountdownView
+                android:layout_gravity="center|right"
+                android:id="@+id/cv_countdownView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:isHideTimeBackground="true"
+                app:timeBgRadius="3dp"
+                app:timeBgSize="20dp"
+                app:timeBgColor="#000"
+                app:isShowDay="false"
+                app:isShowHour="false"
+                app:isShowMillisecond="false"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:suffixDay=""
+                app:suffixGravity="center"
+                app:suffixHour=""
+                app:suffixMillisecond=""
+                app:suffixMinute=":"
+                app:suffixSecond=""
+                app:suffixTextColor="@color/textColor99"
+                app:suffixTextSize="14dp"
+                app:timeTextColor="@color/textColor99"
+                app:timeTextSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_enter"
+        android:layout_width="@dimen/margin_padding_20"
+        android:layout_height="@dimen/margin_padding_20"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/icon_arrow_right"
+        android:contentDescription="@null" />
+</RelativeLayout>

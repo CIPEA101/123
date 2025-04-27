@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    signingConfigs {
+        release {
+            storeFile file('yunbao.jks')
+            keyAlias 'phonelive'
+            keyPassword 'phonelive'
+            storePassword 'phonelive'
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+        applicationId "com.yunbao.phonelive"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.aar','*.jar'])
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile rootProject.ext.dependencies["cardview-v7"]
+    compile rootProject.ext.dependencies["design"]
+    compile 'com.android.support:multidex:1.0.1'
+    compile files('../libs/commons-io-1.4.jar')
+    //网络请求
+    compile 'com.squareup.okhttp3:okhttp:3.11.0'
+    compile 'com.lzy.net:okgo:3.0.4'
+    //OkGo上传下载扩展库
+    compile 'com.lzy.net:okserver:2.0.5'
+    //socket.io
+    compile('io.socket:socket.io-client:1.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    //fastJson解析json
+    compile 'com.alibaba:fastjson:1.1.70.android'
+    //金山播放和推流SDK
+    compile 'com.ksyun.media:libksylive-java:3.0.4'
+    compile 'com.ksyun.media:libksylive-armv7a:3.0.4'
+    //eventbus事件总线
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //使用Glide加载图片
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //gif库，播放礼物gif用
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+    //带圆角，边框的的ImageView
+    compile rootProject.ext.dependencies["roundedimageview"]
+    //一个基于Glide的transformation库,拥有裁剪,着色,模糊,滤镜等多种转换效果
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    //腾讯短视频sdk
+    compile(name: 'LiteAVSDK_UGC_4.4.3774', ext: 'aar')
+    //腾讯bugly
+    compile 'com.tencent.bugly:crashreport:2.6.6'
+    //腾讯定位，地图sdk
+    compile files('libs/TencentLocationSdk_v6.2.5.3.jar')
+    compile files('libs/TencentMapSDK_1.2.8.1.jar')
+    //腾讯云存储
+    compile 'com.tencent.qcloud:cosxml:5.4.13'
+    //七牛云存储
+    compile 'com.qiniu:qiniu-android-sdk:7.2.1'
+    //百度语音识别
+    compile files('libs/bdasr_3.0.8.2.jar')
+    //微信sdk,支付登录分享
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.6'
+    //支付宝sdk
+    compile files('libs/alipaySdk-20180601.jar')
+    //极光 推送,IM
+    compile project(':jpush')
+    //shareSDK
+    compile project(':mob')
+    //萌颜
+    compile project(':beauty')
+    //游戏
+    compile project(':game')
+    //短视频
+    compile project(':video')
+    //友盟统计
+    compile 'com.umeng.sdk:common:1.5.3'
+    compile 'com.umeng.sdk:analytics:7.5.3'
+    compile 'com.github.yalantis:ucrop:2.2.2'
+    //svga
+    compile 'com.github.yyued:SVGAPlayer-Android:2.4.0'
+    compile "org.java-websocket:Java-WebSocket:1.4.0"
+    compile 'com.jcodecraeer:xrecyclerview:1.5.8'
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    implementation 'com.google.zxing:core:3.2.1'
+    //倒计时
+    compile 'com.github.iwgang:countdownview:2.1.6'
+}

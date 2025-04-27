@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_50"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_padding_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="确认投注"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18" />
+
+        <ImageView
+            android:id="@+id/game_chip_close"
+            android:layout_width="@dimen/margin_padding_25"
+            android:layout_height="@dimen/margin_padding_25"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_live_close"
+            android:contentDescription="@null"
+            android:padding="@dimen/margin_padding_5" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_40"
+        android:background="@color/gray2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_game_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_12"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_10"
+            android:gravity="center"
+            android:text="封盘:"
+            android:textSize="@dimen/text_12"/>
+
+        <TextView
+            android:id="@+id/tv_game_issue_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_12"/>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/gray2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_10"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_padding_5"
+        android:paddingRight="@dimen/margin_padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_one_inject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_35"
+                android:layout_marginStart="@dimen/margin_padding_10"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle_half_2_checked"
+                android:text="1倍"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13" />
+
+            <Button
+                android:id="@+id/btn_two_inject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_35"
+                android:layout_marginStart="@dimen/margin_padding_10"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle_half_2_unchecked"
+                android:text="2倍"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_13" />
+
+            <Button
+                android:id="@+id/btn_five_inject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_35"
+                android:layout_marginStart="@dimen/margin_padding_10"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle_half_2_unchecked"
+                android:text="5倍"
+                android:textSize="@dimen/text_13" />
+
+            <Button
+                android:id="@+id/btn_ten_inject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_35"
+                android:layout_marginStart="@dimen/margin_padding_10"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle_half_2_unchecked"
+                android:text="10倍"
+                android:textSize="@dimen/text_13" />
+
+            <Button
+                android:id="@+id/btn_twenty_inject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_35"
+                android:layout_marginStart="@dimen/margin_padding_10"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle_half_2_unchecked"
+                android:text="20倍"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_padding_10">
+
+            <LinearLayout
+                android:id="@+id/ll_injection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tz_injection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rgbDE5245" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_15"
+                    android:text="共" />
+
+                <TextView
+                    android:id="@+id/tv_total_inject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rgbDE5245" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_injection"
+                android:layout_marginTop="@dimen/margin_padding_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="余额:"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rgbDE5245"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_tz_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_padding_35"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_circle_half_8_checked"
+                android:text="确认投注"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

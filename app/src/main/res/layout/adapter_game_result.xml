@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_game_result_tv"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:includeFontPadding="false"
+    android:layout_marginStart="@dimen/margin_padding_3"
+    android:background="@drawable/bg_game_point_red"
+    android:textSize="12dp"
+    android:gravity="center"
+    android:textColor="@color/white" />

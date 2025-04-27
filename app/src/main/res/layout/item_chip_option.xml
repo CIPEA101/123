@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chip_option_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_padding_5"
+    android:paddingBottom="@dimen/margin_padding_5"
+    android:layout_gravity="center"
+    android:background="@color/rgb130c2c"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/chip_option_uri"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/icon_game_chip_one"
+        android:contentDescription="@null" />
+    <TextView
+        android:id="@+id/chip_option_custom_tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/icon_game_chip_hundred_empty"
+        android:textSize="8dp"
+        android:visibility="gone"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="10000" />
+
+    <TextView
+        android:id="@+id/chip_option_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_5"
+        android:text="当前筹码"
+        android:textColor="@color/white"
+        android:textSize="8dp" />
+</LinearLayout>

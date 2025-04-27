@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/global</color>
+    <color name="colorPrimaryDark">@color/global</color>
+    <color name="colorAccent">@color/global</color>
+
+    <color name="global">#EE6363</color>
+    <color name="background">@color/gray2</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor0">#000000</color>
+    <color name="textColor">#323232</color>
+    <color name="white">#ffffff</color>
+    <color name="gray1">#969696</color>
+    <color name="gray2">#f5f5f5</color>
+    <color name="gray3">#c8c8c8</color>
+    <color name="yellow">#EE6363</color>
+    <color name="yellow2">#EE6363</color>
+    <color name="textColor1">#444444</color>
+    <color name="textColor2">#646464</color>
+    <color name="textColor99">#999999</color>
+    <color name="red">#ff0000</color>
+    <color name="pk_red">#f03a40</color>
+    <color name="pk_blue">#2a92f7</color>
+    <color name="black1">#e6323232</color>
+    <color name="black">#000000</color>
+    <color name="fense">#EE6363</color>
+    <color name="danyin">#E3E3DE</color>
+    <color name="shenfen">#f03a40</color>
+    <color name="zise">#ff0e64</color>
+    <color name="zd">#f66a6f</color>
+    <color name="hs">#ECEC40</color>
+    <color name="black_bg">#f5121001</color>
+    <color name="rgb8421F4">#8421F4</color>
+    <color name="rgb262628">#262628</color>
+    <color name="rgb4C4842">#4C4842</color>
+    <color name="rgbDE5245">#DE5245</color>
+    <color name="rgb222222">#222222</color>
+    <color name="rgbFF6071">#FF6071</color>
+    <color name="rgbDC2D6E">#DC2D6E</color>
+    <color name="rgb1A0A3E">#1A0A3E</color>
+    <color name="rgb130c2c">#130c2c</color>
+    <color name="rgb1278F7">#1278F7</color>
+    <color name="rgb1779EF">#1779EF</color>
+    <color name="rgbE997C7">#E997C7</color>
+    <color name="rgbD692B0">#D692B0</color>
+    <color name="rgb61BC9F">#61BC9F</color>
+    <color name="rgbE49DC7">#E49DC7</color>
+
+    <color name="rgbDA540B">#DA540B</color>
+    <color name="rgbC5DB38">#C5DB38</color>
+    <color name="rgb0A61EE">#0A61EE</color>
+    <color name="rgb2B2B43">#2B2B43</color>
+    <color name="rgb027113">#027113</color>
+    <color name="rgb00BEFC">#00BEFC</color>
+    <color name="rgb1513FC">#1513FC</color>
+    <color name="rgb9BABE7">#9BABE7</color>
+    <color name="rgbD91C18">#D91C18</color>
+    <color name="rgb5A1011">#5A1011</color>
+    <color name="rgbCACFD5">#CACFD5</color>
+    <color name="rgbC1C2C4">#C1C2C4</color>
+    <color name="rgbBCBECB">#BCBECB</color>
+
+
+    <color name="color_extension_btn">#FD9B00</color>
+
+    <!--    开奖结果 一分赛车-->
+    <color name="color_game_point_sc_1">#E4DA50</color>
+    <color name="color_game_point_sc_2">#4595D5</color>
+    <color name="color_game_point_sc_3">#4B4B4B</color>
+    <color name="color_game_point_sc_4">#EE722F</color>
+    <color name="color_game_point_sc_5">#70DFE1</color>
+    <color name="color_game_point_sc_6">#4C4FEC</color>
+    <color name="color_game_point_sc_7">#BFBFBF</color>
+    <color name="color_game_point_sc_8">#D83421</color>
+    <color name="color_game_point_sc_9">#6B0F0B</color>
+    <color name="color_game_point_sc_10">#3C7E20</color>
+
+
+    <color name="color_normal_dv">#EFEFEF</color>
+
+    <color name="drawable_normal_dv">#F5F5F5</color>
+
+    <color name="color_profit_vote">#EEBB00</color>
+
+<!--    礼物相关主题色-->
+    <color name="color_gift_main">#FFBB00</color>
+
+    <color name="color_btn_red">#ED4230</color>
+
+
+    <!--    牛人榜-->
+    <color name="color_nr_top_one">#FCB656</color>
+    <color name="color_nr_top_one1">#FB932F</color>
+    <color name="color_nr_top_two">#F36A57</color>
+    <color name="color_nr_top_two1">#F3503D</color>
+    <color name="color_nr_top_three">#7587F1</color>
+    <color name="color_nr_top_three1">#5E72F0</color>
+
+    <!--排行榜 nav 字体颜色-->
+    <color name="color_rank_list_nav_normal">#FFFFFF</color>
+    <color name="color_rank_list_nav_checked">#EE6363</color>
+
+    <drawable name="drawable_rank_list_nav_normal">#00FFFFFF</drawable>
+    <drawable name="drawable_rank_list_nav_mid">#FFFFFF</drawable>
+
+    <drawable name="drawable_transparent">#00FFFFFF</drawable>
+
+
+</resources>

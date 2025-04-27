@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/view_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/act_register_title_tv"
+            style="@style/login_title_tv_style"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/act_register_num_ev"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textSize="15dp"
+        android:textColor="@color/textColor0"
+        android:hint="输入手机号"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_normal_dv"/>
+    <TextView
+        android:id="@+id/act_register_submit_tv"
+        style="@style/login_submit_tv_style"
+        android:layout_marginTop="40dp"
+        android:text="下一步"/>
+</LinearLayout>

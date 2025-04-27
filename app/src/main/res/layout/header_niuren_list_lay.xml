@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/header_niuren_list_top_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEFEF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:overScrollMode="never"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/header_niuren_list_plan_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/textColor"
+            android:text="牛人计划"/>
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#ED4230"
+            android:layout_alignTop="@id/header_niuren_list_plan_tips_tv"
+            android:layout_alignBottom="@id/header_niuren_list_plan_tips_tv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="13dp"
+            android:textColor="@color/textColor2"
+            android:text="实时公布最新注单"/>
+    </RelativeLayout>
+
+</LinearLayout>

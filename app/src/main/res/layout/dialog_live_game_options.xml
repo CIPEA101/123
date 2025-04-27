@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/rgb4C4842"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_game_options"
+                android:layout_width="@dimen/margin_padding_25"
+                android:layout_height="@dimen/margin_padding_25"
+                android:background="@mipmap/icon_xfnc_game"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_game_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_padding_5"
+                android:text="一分11选5"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/iv_game_refresh"
+                android:layout_width="@dimen/margin_padding_15"
+                android:layout_height="@dimen/margin_padding_15"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_padding_10"
+                android:background="@mipmap/icon_game_return"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="上期开奖"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_padding_10"
+        android:paddingRight="@dimen/margin_padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本期截止:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12" />
+
+            <TextView
+                android:id="@+id/tv_game_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#C2B048"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_kj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_35"
+        android:layout_marginTop="@dimen/margin_padding_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_frist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/rgb8421F4"
+            android:gravity="center"
+            android:text="总和"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColor2" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/rgb262628"
+            android:gravity="center"
+            android:text="三军"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColor2" />
+
+        <TextView
+            android:id="@+id/tv_third"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/rgb262628"
+            android:gravity="center"
+            android:text="短牌"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_xx"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingLeft="@dimen/margin_padding_10"
+        android:paddingRight="@dimen/margin_padding_10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_1"
+        android:background="@color/textColor2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/paihangbang_bg07"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_charge_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12"
+                android:text="0"/>
+
+            <ImageView
+                android:id="@+id/iv_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/icon_game_charge"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_isk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_isk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:background="@mipmap/poker_chip0"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/tv_isk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/poker_chip0"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="6dp"
+                    android:textColor="#333333"
+                    android:text="1"/>
+
+                <ImageView
+                    android:id="@+id/iv_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_padding_5"
+                    android:layout_marginEnd="@dimen/margin_padding_5"
+                    android:background="@mipmap/icon_game_more"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_tz"
+                android:layout_width="@dimen/margin_padding_52"
+                android:layout_height="@dimen/margin_padding_20"
+                android:background="@mipmap/photos31"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

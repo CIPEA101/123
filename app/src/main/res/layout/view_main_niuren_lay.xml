@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_padding_40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_padding_2"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/textColor"
+            android:text="牛人"/>
+    </RelativeLayout>
+
+    <com.yunbao.phonelive.custom.RefreshLayout
+        android:id="@+id/view_main_niuren_refresh_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/view_main_niuren_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"/>
+    </com.yunbao.phonelive.custom.RefreshLayout>
+</LinearLayout>

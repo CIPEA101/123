@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/view_main_home_bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_home_top_bg" />
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/view_main_home_magic_indicator"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/btn_search"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:id="@+id/btn_msg"
+            android:layout_width="@dimen/margin_padding_40"
+            android:layout_height="@dimen/margin_padding_40"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/margin_padding_5"
+            android:layout_marginBottom="@dimen/margin_padding_2"
+            android:onClick="mainClick"
+            android:padding="@dimen/margin_padding_9"
+            android:src="@mipmap/icon_main_msg" />
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="@dimen/margin_padding_40"
+            android:layout_height="@dimen/margin_padding_40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/margin_padding_5"
+            android:layout_marginBottom="@dimen/margin_padding_2"
+            android:layout_toLeftOf="@id/btn_msg"
+            android:onClick="mainClick"
+            android:padding="@dimen/margin_padding_9"
+            android:src="@mipmap/icon_main_search" />
+
+        <TextView
+            android:id="@+id/red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_padding_14"
+            android:layout_alignTop="@id/btn_msg"
+            android:layout_marginTop="@dimen/margin_padding_5"
+            android:layout_marginRight="@dimen/margin_padding_5"
+            android:background="@drawable/bg_red_point"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minWidth="@dimen/margin_padding_14"
+            android:paddingLeft="@dimen/margin_padding_3"
+            android:paddingRight="@dimen/margin_padding_3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_10"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.yunbao.phonelive.custom.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:overScrollMode="never" />
+    <ImageView
+        android:id="@+id/view_main_home_tgzq_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/home_tgzq"/>
+</RelativeLayout>

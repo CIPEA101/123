@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunbao.phonelive.views.DrawableTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_zj_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_live_chat_item"
+    android:drawableStart="@mipmap/danmu_zhongjiang"
+    android:drawablePadding="@dimen/margin_padding_5"
+    android:gravity="center_vertical"
+    android:padding="@dimen/margin_padding_5"
+    android:textColor="@color/white" />
+

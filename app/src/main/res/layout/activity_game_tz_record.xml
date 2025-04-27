@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include
+        layout="@layout/view_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_45"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_all_award"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_all_award"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/view_all_award"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/rgbDE5245" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_no_award"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_no_award"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="未开奖"
+                android:textColor="@color/textColor2" />
+
+            <View
+                android:id="@+id/view_no_award"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/rgbDE5245"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_lottery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_lottery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="中奖"
+                android:textColor="@color/textColor2" />
+
+            <View
+                android:id="@+id/view_lottery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/rgbDE5245"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.yunbao.phonelive.custom.RefreshLayout
+            android:id="@+id/act_game_tz_record_refresh_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:loadMoreEnable="true"
+            app:refreshEnable="true">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/act_game_tz_record_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"/>
+        </com.yunbao.phonelive.custom.RefreshLayout>
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无数据"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

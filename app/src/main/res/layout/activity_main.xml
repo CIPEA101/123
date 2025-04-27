@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <com.yunbao.phonelive.custom.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="51dp"
+        app:canScroll="false" />
+
+    <FrameLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+<!--        android:background="@mipmap/menu_bg">-->
+
+        <com.yunbao.phonelive.custom.TabButtonGroup
+            android:id="@+id/tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.yunbao.phonelive.custom.TabButton
+                android:layout_width="@dimen/margin_padding_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_checked="true"
+                app:tbn_icon_size="@dimen/margin_padding_24"
+                app:tbn_selected_icon="@mipmap/icon_main_home_1"
+                app:tbn_text_color="@color/rgb222222"
+                app:tbn_text_size="@dimen/text_12"
+                app:tbn_tip="@string/main_home"
+                app:tbn_unselected_icon="@mipmap/icon_main_home_0" />
+
+            <com.yunbao.phonelive.custom.TabButton
+                android:layout_width="@dimen/margin_padding_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="@dimen/margin_padding_24"
+                app:tbn_selected_icon="@mipmap/icon_main_near_1"
+                app:tbn_text_color="@color/rgb222222"
+                app:tbn_text_size="@dimen/text_12"
+                app:tbn_tip="充值"
+                app:tbn_unselected_icon="@mipmap/icon_main_near_0" />
+<!--            android:layout_marginEnd="@dimen/margin_padding_60"-->
+
+            <com.yunbao.phonelive.custom.TabButton
+                android:layout_width="@dimen/margin_padding_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="@dimen/margin_padding_24"
+                app:tbn_selected_icon="@mipmap/icon_main_list_1"
+                app:tbn_text_color="@color/rgb222222"
+                app:tbn_text_size="@dimen/text_12"
+                app:tbn_tip="@string/main_list"
+                app:tbn_unselected_icon="@mipmap/icon_main_list_0" />
+            <com.yunbao.phonelive.custom.TabButton
+                android:layout_width="@dimen/margin_padding_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="@dimen/margin_padding_24"
+                app:tbn_selected_icon="@mipmap/icon_main_niuren_1"
+                app:tbn_text_color="@color/rgb222222"
+                app:tbn_text_size="@dimen/text_12"
+                app:tbn_tip="@string/main_niuren"
+                app:tbn_unselected_icon="@mipmap/icon_main_niuren_0" />
+
+            <com.yunbao.phonelive.custom.TabButton
+                android:layout_width="@dimen/margin_padding_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="@dimen/margin_padding_24"
+                app:tbn_selected_icon="@mipmap/icon_main_me_1"
+                app:tbn_text_color="@color/rgb222222"
+                app:tbn_text_size="@dimen/text_12"
+                app:tbn_tip="@string/main_me"
+                app:tbn_unselected_icon="@mipmap/icon_main_me_0" />
+
+        </com.yunbao.phonelive.custom.TabButtonGroup>
+
+        <ImageView
+            android:id="@+id/btn_start"
+            android:layout_width="@dimen/margin_padding_52"
+            android:layout_height="@dimen/margin_padding_52"
+            android:visibility="gone"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/margin_padding_15"
+            android:onClick="mainClick"
+            android:src="@mipmap/icon_main_start"
+            android:contentDescription="@null"/>
+    </FrameLayout>
+
+
+</RelativeLayout>
