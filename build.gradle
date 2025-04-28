@@ -13,13 +13,11 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        google()
+        mavenCentral() // 使用 Maven Central 替代 JitPack
         maven {
-            url "https://maven.google.com"
-        }
-        maven{
             url "https://dl.bintray.com/tencentqcloudterminal/maven"
         }
-        maven { url "https://jitpack.io" }
     }
 }
 
