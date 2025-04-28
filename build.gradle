@@ -1,26 +1,28 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-apply from: "config.gradle"
-buildscript {
-    repositories {
-        jcenter()
-        google()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.3'
-    }
-}
+apply plugin: 'com.android.application'
 
-allprojects {
-    repositories {
-        jcenter()
-        google()
-        mavenCentral() // 使用 Maven Central 替代 JitPack
-        maven {
-            url "https://dl.bintray.com/tencentqcloudterminal/maven"
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.example.app"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 }
